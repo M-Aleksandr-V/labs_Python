@@ -1,5 +1,5 @@
-step = int(10)
 import turtle
+step = int(10)
 turtle.ht()
 turtle.speed(10)
 a = 1
