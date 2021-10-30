@@ -19,4 +19,4 @@ while counter <= 40:
         y -= 15
         turtle.goto(x, y)
         turtle.pendown()
-        step += 20
+        step += 30
