@@ -1,7 +1,7 @@
-
-line_length = int(50)
 import turtle
 turtle.shape('turtle')
+line_length = int(50)
+
 beginning_number_of_sides: int = 3
 x = turtle.xcor()
 y = turtle.ycor()
