@@ -1,5 +1,5 @@
 
-line_length = int(input('Enter the length  : '))
+line_length = int(50)
 import turtle
 turtle.shape('turtle')
 beginning_number_of_sides: int = 3
@@ -36,3 +36,4 @@ def draw_polygon():
 #        turtle.pendown()
 #        step += 30
 draw_polygon()
+
