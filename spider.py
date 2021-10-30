@@ -1,9 +1,9 @@
-
-number_of_sides: float = float(input('Enter the number of lines :  '))
-counter: int = 1
 import turtle
 turtle.shape('turtle')
 turtle.speed(50)
+number_of_sides: float = float(input('Enter the number of lines :  '))
+counter: int = 1
+
 
 def line(line_length, angle: object) -> object:
     """Draw the line and sets the angle"""
