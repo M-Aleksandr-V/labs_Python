@@ -11,7 +11,7 @@ counter: int = 1
 def line(line_length, angle_between_lines):
     """Draw the line and sets the angle"""
     turtle.forward(line_length)
-    turtle.right(angle_between_lines)
+    turtle.left(angle_between_lines)
 
 
 def draw_polygon():
@@ -22,7 +22,7 @@ def draw_polygon():
     while counter <= beginning_number_of_sides:
         counter += 1
         line(line_length, angle)
-
+        print(angle)
 #while counter <= 40:
 #    counter += 1
 #    turtle.forward(step)
