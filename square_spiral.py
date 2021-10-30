@@ -6,7 +6,7 @@ a = 1
 counter = 1
 
 
-while counter <= 40:
+while counter <= 41:
     counter += 1
     turtle.forward(step)
     turtle.left(90)
