@@ -1,8 +1,8 @@
 import turtle
-step = int(10)
-
 turtle.ht()
 turtle.speed(10)
+
+step = int(10)
 a = 1
 counter = 1
 x = turtle.xcor()
