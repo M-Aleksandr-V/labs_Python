@@ -1,7 +1,7 @@
 import turtle
 turtle.shape('turtle')
 #turtle.speed(50)
-number_of_sides: float = float(input('Enter the number_of_sides :  '))
+number_of_sides: int = int(input('Enter the number_of_sides :  '))
 
 counter: int = 1
 
@@ -16,7 +16,7 @@ def draw_polygon():
     """Draw the polygon and calculate the external angle"""
     global counter
 # Формула вычисления внешнего угла правильного многоугольника
-    angle: float = float((360 / number_of_sides))
+    angle: int = int((360 / number_of_sides))
     while counter <= number_of_sides:
         counter += 1
         line(line_length, angle)
@@ -24,9 +24,9 @@ def draw_polygon():
 
 
 if number_of_sides > 2:
-    line_length = float(input('Enter the length  : '))
+    line_length = int(input('Enter the length  : '))
     draw_polygon()
 else:
-    number_of_sides: float = float(input('Enter the number_of_sides > 2 :  '))
-    line_length = float(input('Enter the length  : '))
+    number_of_sides: int = int(input('Enter the number_of_sides > 2 :  '))
+    line_length = int(input('Enter the length  : '))
     draw_polygon()
