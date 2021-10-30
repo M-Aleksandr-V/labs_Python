@@ -1,5 +1,5 @@
 import turtle
-step = int(input('Введите ширину квадрата  '))
+step = int(10)
 
 turtle.ht()
 turtle.speed(10)
@@ -19,4 +19,4 @@ while counter <= 40:
         y -= 15
         turtle.goto(x, y)
         turtle.pendown()
-        step += 30
+        step += 20
