@@ -1,5 +1,6 @@
-step = int(input('Введите ширину квадрата  '))
 import turtle
+step = int(input('Введите ширину квадрата  '))
+
 turtle.ht()
 turtle.speed(10)
 a = 1
