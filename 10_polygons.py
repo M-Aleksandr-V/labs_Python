@@ -1,39 +1,22 @@
 import turtle
-turtle.shape('turtle')
-line_length = int(50)
-
-beginning_number_of_sides: int = 3
+turtle.ht()
+turtle.speed(10)
+number_of_sides = 4
+step = int(10)
+a = 1
+counter = 1
 x = turtle.xcor()
 y = turtle.ycor()
-counter: int = 1
-
-
-def line(line_length, angle_between_lines):
-    """Draw the line and sets the angle"""
-    turtle.forward(line_length)
-    turtle.left(angle_between_lines)
-
-
-def draw_polygon():
-    """Draw the polygon and calculate the external angle"""
-    global counter
-# Формула вычисления внешнего угла правильного многоугольника
-    angle: int = int((360 / beginning_number_of_sides))
-    while counter <= beginning_number_of_sides:
-        counter += 1
-        line(line_length, angle)
-        print(angle)
-#while counter <= 40:
-#    counter += 1
-#    turtle.forward(step)
-#    turtle.left(90)
-#    a += 1
-#    if (a % 4) == 1:
-#        turtle.penup()
-#        x -= 15
-#        y -= 15
-#        turtle.goto(x, y)
-#        turtle.pendown()
-#        step += 30
-draw_polygon()
-
+angle: int = int((360 / number_of_sides))
+while counter <= number_of_sides*10 :
+    counter += 1
+    turtle.forward(step)
+    turtle.left(angle)
+    a += 1
+    if (a % number_of_sides) == 1:
+        turtle.penup()
+        x -= 10
+        y -= 10
+        turtle.goto(x, y)
+        turtle.pendown()
+        step += 20
